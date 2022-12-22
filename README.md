@@ -8,3 +8,5 @@
   $ git clone https://github.com/skrabec/gorest_api_automation.git
 ```
 2. Run Postman collection using environment
+
+### Also test results can be find in Actions -> Workwlows -> Artifacts
