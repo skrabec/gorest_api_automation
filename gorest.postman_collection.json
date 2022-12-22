@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "16e328e0-8690-4fb9-b0f4-d40ec69e3ee1",
+		"name": "gorest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "498936"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tenali Ramakrishna\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"tenali.ramakrishna@15ce.com\",\r\n    \"status\": \"active\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}{{create_user}}",
+					"host": [
+						"{{url}}{{create_user}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "bf3540b4cea280ff68fec4da41a3bd280b9d59b4df9ad9c27dddeab98f59a4da",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
